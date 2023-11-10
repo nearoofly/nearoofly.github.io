@@ -7,7 +7,7 @@
            <link rel="stylesheet" href="styles.css"> <!-- Assurez-vous que le chemin est correct -->
           <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+
 
 <body>
  <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
