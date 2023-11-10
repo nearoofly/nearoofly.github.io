@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body {
+        background-image: url('images/Image 2023-11-09 at 01.18.36.jpeg');
+        background-size: cover; /* Ajuster la taille de l'image au conteneur */
+        background-repeat: no-repeat; /* Ne pas répéter l'image */
+        background-attachment: fixed; /* Fixer l'image pour qu'elle reste en arrière-plan */
+        background-position: center; /* Centrer l'image */
+    }
+</style>
+
+ <style>
+        /* Style pour rendre le texte en blanc */
+        body {
+            background-color: /* Couleur de fond de votre choix */;
+        }
+        
+        /* Style pour le texte en blanc */
+        body, label, input, button {
+            color: white;
+        }
+    </style>
+
+
+    <title>Inscription</title>
+    <!-- Ajoutez ici des liens vers des fichiers CSS ou des bibliothèques JavaScript si nécessaire -->
+</head>
+<body>
+ <img src="images/Logo/HDessa_logo.png" alt="Logo de Mon Site Web" width="50" height="50">
+    <h1>Inscription</h1>
+    <form id="inscription-form" method="post" action="traitement_inscription.php" onsubmit="return validerFormulaire()">
+        <label for="username">Nom d'utilisateur :</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="email">E-mail :</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="password">Mot de passe :</label>
+        <input type="password" id="password" name="password" required>
+        
+        <label for="confirm_password">Confirmer le mot de passe :</label>
+        <input type="password" id="confirm_password" name="confirm_password" required>
+        
+        <button type="submit">S'inscrire</button>
+        <button type="reset" style="background-color: #4CAF50; color: white;" >Réinitialiser</button> 
+    </form>
+    
+    <div id="error-message" style="color: red;"></div>
+    
+    <!-- Ajoutez ici des scripts JavaScript pour la validation côté client -->
+    <script>
+        function validerFormulaire() {
+            // Ajoutez ici la logique de validation côté client (JavaScript)
+            // Assurez-vous que les mots de passe correspondent, que l'e-mail est valide, etc.
+            // Retournez false en cas d'erreur pour empêcher la soumission du formulaire
+        }
+    </script>
+</body>
+</html>
+
+
+
