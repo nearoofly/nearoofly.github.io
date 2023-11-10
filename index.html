@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Ensures optimal rendering on mobile devices. -->
+ <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- Optimal Internet Explorer compatibility -->
+</head>
+
+<body>
+ <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+</body>
+    
+
+    
 <style>
     body {
         background-image: url('images/HDessa/Image 2023-11-09 at 01.18.36.jpeg');
@@ -360,5 +370,27 @@
     <footer>
         <p>&copy; 2023 HDessa video create by Willy</p>
     </footer>
+        <body>
+ <div id="paypal-donate-button-container"></div>
+
+  <script>
+   PayPal.Donation.Button({
+       env: 'sandbox',
+       hosted_button_id: 'https://www.paypal.com/donate/?hosted_button_id=ZKUT7SY5QACU2',
+       // business: 'dearcoach360@gmail.com',
+       image: {
+           src: 'https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif',
+           title: 'PayPal - The safer, easier way to pay online!',
+           alt: 'Donate with PayPal button'
+       },
+       onComplete: function (params) {
+           // Your onComplete handler
+       },
+   }).render('#paypal-donate-button-container');
+</script>
+</body>
+
+
+        
 </body>
 </html>
