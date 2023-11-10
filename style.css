@@ -48,3 +48,14 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
+
+/* Autres styles généraux ici */
+
+/* Media query pour les écrans jusqu'à 600 pixels de large (typiquement pour les iPhones en mode portrait) */
+@media only screen and (max-width: 600px) {
+    /* Styles spécifiques pour les petits écrans */
+    body {
+        font-size: 14px; /* Exemple d'ajustement de la taille de police pour les petits écrans */
+    }
+}
+
