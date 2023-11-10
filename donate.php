@@ -62,8 +62,6 @@
     <label for="montant">Montant du don (en euros) :</label>
     <input type="number" id="montant" name="montant" required>
     <button type="submit">Faire un don</button>
-</form>
-
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Traitement des données du formulaire de don
@@ -78,8 +76,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 ?>
 
-
     
+</form>
+
+
+   
     <p>Merci pour votre générosité !</p>
 
     <!-- Scripts pour Stripe -->
