@@ -64,7 +64,22 @@
     <button type="submit">Faire un don</button>
 </form>
 
+<?php
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Traitement des données du formulaire de don
+    $montant = $_POST['montant'];
+    
+    // Effectuez le traitement de paiement ou d'autres opérations ici
+    // ...
+    
+    // Redirigez l'utilisateur vers une page de confirmation, de remerciement, ou autre
+    header('Location: confirmation.php');
+    exit;
+}
+?>
 
+
+    
     <p>Merci pour votre générosité !</p>
 
     <!-- Scripts pour Stripe -->
