@@ -1,4 +1,22 @@
 <?php
+// traitement_inscription.php
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Récupérer les données du formulaire
+    $nom = $_POST["nom"];
+    $prenom = $_POST["prenom"];
+    $email = $_POST["email"];
+    $mot_de_passe = $_POST["mot_de_passe"];
+
+    // Effectuer le traitement nécessaire avec les données
+
+    // Par exemple, vous pouvez les enregistrer dans une base de données
+}
+?>
+
+
+
+<?php
 // Connexion à la base de données (remplacez les informations par les vôtres)
 $host = "localhost";
 $dbname = "nom_de_votre_base_de_donnees";
