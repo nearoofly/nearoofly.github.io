@@ -14,7 +14,7 @@
  <style>
         /* Style pour rendre le texte en blanc */
         body {
-            background-color: /* Couleur de fond de votre choix */;
+            background-color: green /* Couleur de fond de votre choix */;
         }
         
         /* Style pour le texte en blanc */
@@ -57,6 +57,41 @@
             // Retournez false en cas d'erreur pour empêcher la soumission du formulaire
         }
     </script>
+
+
+
+
+
+
+
+
+
+
+
+<body>
+              <a href="https://www.paypal.com/donate/?hosted_button_id=ZKUT7SY5QACU2" target="_blank">
+ <div id="paypal-donate-button-container"></div>
+
+  <script>
+   PayPal.Donation.Button({
+       env: 'sandbox',
+       hosted_button_id: 'https://www.paypal.com/donate/?hosted_button_id=ZKUT7SY5QACU2',
+       // business: 'wharklya@gmail.com',
+       image: {
+           src: 'https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif',
+           title: 'PayPal - The safer, easier way to pay online!',
+           alt: 'Donate with PayPal button<a href="https://www.paypal.com/donate/?hosted_button_id=ZKUT7SY5QACU2" target="_blank">Mon Lien</a>'
+       },
+       onComplete: function (params) {
+           // Your onComplete handler
+       },
+   }).render('#paypal-donate-button-container');
+</script>
+</body>
+   
+    <footer>
+        <p>&copy; 2023 HDessa video create by Willy</p>
+    </footer>  
 </body>
 </html>
 
