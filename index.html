@@ -69,22 +69,190 @@
           
 
     
+
+
+
+
+
+
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <
+<title>Inscription</title>
+    
+   
+<script>
+        function validerFormulaire() {
+            var username = document.getElementById('username').value;
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+            var confirm_password = document.getElementById('confirm_password').value;
+
+            if (username === '' || email === '' || password === '' || confirm_password === '') {
+                alert('V
+
+        function validerFormulaire() {
+            var username = document.getElementById('username').value;
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+            var confirm_password = document.getElementById('confirm_password').value;
+
+            if (username === '' || email === '' || password === '' || confirm_password === '') {
+                alert('Veuillez remplir tous les champs.');
+                return false;
+            }
+
+            if (password !== confirm_password) {
+                alert('Les mots de passe ne
+
+        function validerFormulaire() {
+            var username = document.getElementById('username').value;
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+            var confirm_password = document.getElementById('confirm_password').value;
+
+            if (username === '' || email === '' || password === '' || confirm_password === '') {
+                alert('Veuillez remplir tous les champs.');
+                return false;
+            }
+
+            if (password !== confirm_password) {
+                alert('Les mots de passe ne correspondent pas.');
+                return false;
+            }
+
+            var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                alert('Veuillez entrer une adresse e
+
+        function validerFormulaire() {
+            var username = document.getElementById('username').value;
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+            var confirm_password = document.getElementById('confirm_password').value;
+
+            if (username === '' || email === '' || password === '' || confirm_password === '') {
+                alert('Veuillez remplir tous les champs.');
+                return false;
+            }
+
+            if (password !== confirm_password) {
+                alert('Les mots de passe ne correspondent pas.');
+                return false;
+            }
+
+            var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                alert('Veuillez entrer une adresse
+
+        function validerFormulaire() {
+            var username = document.getElementById('username').value;
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+            var confirm_password = document.getElementById('confirm_password').value;
+
+            if (username === '' || email === '' || password === '' || confirm_password === '') {
+                alert('Veuillez remplir tous les champs.');
+                return false;
+            }
+
+            if (password !== confirm_password) {
+                alert('Les mots de passe ne correspondent pas.');
+                return false;
+            }
+
+            var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                alert('Veuillez entrer une
+
+        function validerFormulaire() {
+            var username = document.getElementById('username').value;
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+            var confirm_password = document.getElementById('confirm_password').value;
+
+            if (username === '' || email === '' || password === '' || confirm_password === '') {
+                alert('Veuillez remplir tous les champs.');
+                return false;
+            }
+
+            if (password !== confirm_password) {
+                alert('Les mots de passe ne correspondent pas.');
+                return false;
+            }
+
+            var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                alert('Veuillez entrer
+
+        function validerFormulaire() {
+            var username = document.getElementById('username').value;
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+            var confirm_password = document.getElementById('confirm_password').value;
+
+            if (username === '' || email === '' || password === '' || confirm_password === '') {
+                alert('Veuillez remplir tous les champs.');
+                return false;
+            }
+
+            if (password !== confirm_password) {
+                alert('Les mots de passe ne correspondent pas.');
+                return false;
+            }
+
+            var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                alert('Veuillez entrer une adresse e-mail valide.');
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</head>
+
 <body>
- <img src="images/Logo/HDessa_logo.png" alt="Logo de Mon Site Web" width="50" height="50">
+    <img src="images/Logo/HDessa_logo.png" alt="Logo de Mon Site Web" width="50" height="50">
     <h1>Inscription</h1>
     <form id="inscription-form" method="post" action="traitement_inscription.php" onsubmit="return validerFormulaire()">
-        <label for="username">Nom d'utilisateur :</label>
-        <input type="text" id="username" name="username" required>
         
+       
+<label for="username">Nom d'utilisateur :</label>
+        <input type="text" id="username" name="username" required>
+
         <label for="email">E-mail :</label>
         <input type="email" id="email" name="email" required>
-        
+
         <label for="password">Mot de passe :</label>
         <input type="password" id="password" name="password" required>
-        
+
         <label for="confirm_password">Confirmer le mot de passe :</label>
-        <input type="password" id="confirm_password" name="confirm_password" required>
-        <body>
+        <input type="password" id="confirm_password" name="confirm_password" required><br><br>
+
+        
+
+<input type="submit" value="S'inscrire">
+    </form>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+          
 
     <!-- Remplacez "VOTRE_NOM_UTILISATEUR_GITHUB" par votre nom d'utilisateur GitHub -->
     
