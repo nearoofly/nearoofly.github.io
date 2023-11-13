@@ -3,9 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-    
 <style>
     body {
         background-image: url('images/Image 2023-11-09 at 01.18.36.jpeg');
@@ -15,7 +12,11 @@
         background-position: center; /* Centrer l'image */
     }
 </style>
-<script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+   
+<body>
+ <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+</body>
+
  <style>
         /* Style pour rendre le texte en blanc */
         body {
@@ -55,13 +56,7 @@
     
  <a href="https://wharkly47.github.io/Hdessawvideos" class="website-button" target="_blank">S'inscrire</a>
 </body>
-           
-
-
-
-
-
-                
+          
             </div>
         <button type="reset" style="background-color: #4CAF50; color: white;" >Réinitialiser</button> 
     </form>
@@ -78,58 +73,39 @@
     </script>
 
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page avec Bouton Donate</title>
-    <style>
-        body {
+
+
+
+
+<style>
+        /* Placez votre code CSS ici */
+        .introduction {
+            background: url('background.jpg') center/cover no-repeat;
+            height: 30vh;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .intro-content {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-30%, -30%);
+            text-align: center;
+        }
+
+        .intro-content h1 {
+            font-size: 120px;
             margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh; /* 100% de la hauteur de la fenêtre visible */
+            color: orange; /* Couleur orange */
         }
 
-        /* Contenu de votre page */
-        .content {
-            flex: 1; /* Le contenu prend l'espace restant */
-            /* Ajoutez d'autres styles pour le contenu selon vos besoins */
-        }
-
-        /* Bouton Donate */
-        .donate-button {
-            background-color: #3498db; /* Couleur de fond du bouton */
-            color: #ffffff; /* Couleur du texte du bouton */
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            font-size: 16px;
-            margin: 20px; /* Marge autour du bouton pour l'éloigner du contenu */
-            align-self: center; /* Centre le bouton horizontalement */
+        .intro-content p {
+            font-size: 20px;
+            margin: 20px 0;
+            color: white; /* Couleur blanc */
         }
     </style>
-</head>
-<body>
-
-    <div class="content">
-        <!-- Votre contenu de page ici -->
-        <h1>Contenu de la page</h1>
-        <p>... Autres éléments ...</p>
-    </div>
-
-    <!-- Bouton Donate -->
-    <a href="lien-de-donate" class="donate-button" target="_blank">Donate</a>
-
-</body>
-</html>
-
-
-
-
 
 
     
@@ -138,12 +114,12 @@
 
 
 
-<body>
+                  <body>
               <a href="https://www.paypal.com/donate/?hosted_button_id=ZKUT7SY5QACU2" target="_blank">
- <div id="paypal-donate-button-container"></div>
+                    <div id="paypal-donate-button-container"></div>
 
-  <script>
-   PayPal.Donation.Button({
+                        <script>
+                    PayPal.Donation.Button({
        env: 'sandbox',
        hosted_button_id: 'https://www.paypal.com/donate/?hosted_button_id=ZKUT7SY5QACU2',
        // business: 'wharklya@gmail.com',
@@ -156,11 +132,11 @@
            // Your onComplete handler
        },
    }).render('#paypal-donate-button-container');
-</script>
+                 </scrip> 
+                     
 </body>
-   
-    <footer>
+<footer>
         <p>&copy; 2023 HDessa video create by Willy</p>
-    </footer>  
+</footer>  
 </body>
 </html>
