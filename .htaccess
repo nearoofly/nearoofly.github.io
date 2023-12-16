@@ -1,2 +1,2 @@
 RewriteEngine on
-RewriteRule ^ads\.txt$ https://ads.txt.wharkly47.github.io.redirect.host [L,R=301]
+RewriteRule ^ads\.txt$ https://wharkly47.github.io [L,R=301]
