@@ -1,3 +1,3 @@
 RewriteEngine on
-RewriteRule ^ads\.txt$ https://wharkly47.github.io [L,R=301]
 Redirect 301 /ads.txt https://srv.adstxtmanager.com/61938/wharkly47.github.io
+
