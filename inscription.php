@@ -1,6 +1,6 @@
 <?php
 // Connexion à votre base de données (vous devrez configurer la connexion à votre base de données)
-$host = "localhost:5000/";
+$host = "wharkly47.github.io/hdessa.html";
 $dbname = "nom_de_votre_base_de_donnees";
 $username = "votre_nom_d_utilisateur";
 $password = "votre_mot_de_passe";
