@@ -12,7 +12,7 @@
      <?php
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Intégration Stripe pour traiter le paiement
-        require 'vendor/autoload.php'; // Assurez-vous d'avoir installé la bibliothèque Stripe (composer require stripe/stripe-php)
+        require 'vendor/autoload.php'; // (composer require stripe/stripe-php)
         \Stripe\Stripe::setApiKey('pk_live_51NID2BAGHCS2IVlyKTnlpEsDpVM20wph80XFEG24VnSlh2JSp1OqHFlutrBHiPxcoOIhYAQdoklbBMRQws3cRC3U00tsrEOTxW');
 
         try {
