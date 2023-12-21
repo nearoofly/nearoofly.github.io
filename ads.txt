@@ -3,7 +3,7 @@ google.com, pub-9353048198801946, DIRECT, f08c47fec0942fa0
 header('Location: https://srv.adstxtmanager.com/61938/wharkly47.github.io');
 exit;
 ?>
-#Ads.txt wharkly47.github
+#Ads.txt nearoofly.github
 
 # 35
 adingo.jp, 24483, RESELLER
