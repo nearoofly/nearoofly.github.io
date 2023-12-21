@@ -1,5 +1,5 @@
 // Inclure la bibliothèque Stripe.js
-var stripe = Stripe('pk_live_51NID2BAGHCS2IVlyKTnlpEsDpVM20wph80XFEG24VnSlh2JSp1OqHFlutrBHiPxcoOIhYAQdoklbBMRQws3cRC3U00tsrEOTxW'); // Remplacez par votre clé publique Stripe
+var stripe = Stripe('pk_live_ 0000000000000 '); // Remplacez par votre clé publique Stripe
 
 // Créer un élément de carte
 var elements = stripe.elements();
