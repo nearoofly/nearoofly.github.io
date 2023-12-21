@@ -12,7 +12,7 @@ document.getElementById('inscription-form').addEventListener('submit', function(
     email: email,
     password: password
   }).then(() => {
-    window.location.href = 'https://nearoofly.github.io/Hdessawvideos';
+    window.location.href = 'https://nearoofly.github.io';
   }).catch((error) => {
     console.error('Erreur lors de l\'inscription : ', error);
   });
