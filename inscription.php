@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($conn->query($sql) === TRUE) {
         // Rediriger vers la page d'accueil après l'inscription réussie
-        header("Location: index.html");
+        header("Location: hdessa.html");
         exit();
     } else {
         echo "Erreur: " . $sql . "<br>" . $conn->error;
