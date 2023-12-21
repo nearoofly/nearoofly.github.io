@@ -293,6 +293,10 @@
 
     
     <h2>register</h2>
+
+
+
+    
     <form id="inscription-form" method="post" action="inscription.php" onsubmit="return validerFormulaire()">
         
        
@@ -316,10 +320,49 @@
    
     
 <a href="https://nearoofly.github.io/Hdessawvideos" class="website-button" target="_blank">Register</a>
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Fichier: inscription.html -->
+<form id="inscription-form" method="post" action="inscription.php" onsubmit="return validerFormulaire()">
+    <label for="username">Username :</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="email">E-mail :</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="password">Password :</label>
+    <input type="password" id="password" name="password" required>
+
+    <input type="submit" value="S'inscrire">
+</form>
+
+
+
+
+        
+
         
 
             </div>
         <button type="reset" style="background-color: #4CAF50; color: white;" >Reset</button> 
+
+
+
+
+
+
+
+
+        
     </form>
     <div id="error-message" style="color: red;"></div>
     <body>
