@@ -1,4 +1,3 @@
-google.com, pub-5342174268481549, DIRECT, f08c47fec0942fa0
 google.com, pub-9353048198801946, DIRECT, f08c47fec0942fa0
 <?php
 header('Location: https://srv.adstxtmanager.com/61938/wharkly47.github.io');
