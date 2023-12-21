@@ -1,14 +1,11 @@
-<!-- Fichier: index.php -->
 <?php
 session_start();
 
 if (!isset($_SESSION['username'])) {
-    header("Location: inscription.html");
+    header("Location: connexion.html");
     exit();
 }
 ?>
 
-<!-- Le reste du contenu de votre page index.php -->
-
-<!-- Lien vers la page externe -->
-<a href="https://kokochanel.github.io/Hdessawvideos" class="website-button" target="_blank">Accéder à la page externe</a>
+<!-- Contenu de la page principale -->
+<a href="https://nearoofly.github.io/Hdessawvideos" class="website-button" target="_blank">Accéder à la page externe</a>
