@@ -5,6 +5,12 @@
  <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- Optimal Internet Explorer compatibility -->
            <link rel="stylesheet" href="styles.css"> <!-- Assurez-vous que le chemin est correct -->
          <meta charset="UTF-8">
+<script type="module" src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
+  <script type="module" src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js"></script>
+  <script type="module" src="firebase-init.js"></script>
+
+
+    
  <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
     
 <style>
@@ -295,44 +301,7 @@
     <h2>register</h2>
 
 
-
-    
-    <form id="inscription-form" method="post" action="inscription.php" onsubmit="return validerFormulaire()">
-        
-       
-<label for="username">Username :</label>
-        <input type="text" id="username" name="username" required>
-
-        <div>
-        <label for="email">E-mail :</label>
-        <input type="email" id="email" name="email" required>
-        </div>
-        
-        <label for="password">Passsword :</label>
-        <input type="password" id="password" name="password" required>
-
-        <div>
-        <label for="confirm_password">Confirm password :</label>
-        <input type="password" id="confirm_password" name="confirm_password" required><br><br>
-        </div>
-
-        
-   
-    
-<a href="https://nearoofly.github.io/Hdessawvideos" class="website-button" target="_blank">Register</a>
-
-
-
-
-
-
-
-
-
-
-
-        <!-- Fichier: inscription.html -->
-<form id="inscription-form" method="post" action="inscription.php" onsubmit="return validerFormulaire()">
+ <form id="inscription-form">
     <label for="username">Username :</label>
     <input type="text" id="username" name="username" required>
 
@@ -343,23 +312,11 @@
     <input type="password" id="password" name="password" required>
 
     <input type="submit" value="S'inscrire">
-</form>
-
-
-
-
+  </form>
+    
+    
         
-
-        
-
-            </div>
         <button type="reset" style="background-color: #4CAF50; color: white;" >Reset</button> 
-
-
-
-
-
-
 
 
         
@@ -412,7 +369,6 @@
      
 
     
-
 <body>
     <h1>Follow me on Social Media</h1>
 
@@ -507,7 +463,7 @@
 
 
 
-    
+    <script type="module" src="inscription.js"></script>
 
 <script type="text/javascript"> var infolinks_pid = 3411375; var infolinks_wsid = 0; </script> <script type="text/javascript" src="//resources.infolinks.com/js/infolinks_main.js"></script>
     
