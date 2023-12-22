@@ -26,11 +26,80 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <title>Connexion</title>
   <script type="module" src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
   <script type="module" src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js"></script>
+
+ <style>
+    /* Styles CSS */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-container {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+      width: 400px;
+      text-align: center;
+    }
+
+    .login-container h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+      width: calc(100% - 20px);
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .login-container input[type="submit"] {
+      width: 100%;
+      padding: 12px;
+      margin-top: 20px;
+      border: none;
+      border-radius: 4px;
+      background-color: #333;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .login-container input[type="submit"]:hover {
+      background-color: #555;
+    }
+
+    .login-container p {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+
+  
   <script type="module" src="firebase-init.js"></script>
 </head>
+
+
+
+
+
+
+  
 <body>
 
 <!-- Formulaire de connexion -->
+   <h2>Connexion</h2>
 <form id="connexion-form" method="post" action="connexion.php">
     <label for="username">Username :</label>
     <input type="text" id="username" name="username" required>
@@ -42,20 +111,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <input type="reset" value="Réinitialiser">
 </form>
 
-
-
-
-  
-  <h1>Connexion</h1>
-  <form id="connexion-form">
-    <label for="username">Username :</label>
-    <input type="text" id="username" name="username" required>
-
-    <label for="password">Password :</label>
-    <input type="password" id="password" name="password" required>
-
-    <input type="submit" value="Se connecter">
-  </form>
 
 
 
