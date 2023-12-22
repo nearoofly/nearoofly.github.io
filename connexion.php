@@ -25,6 +25,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 // Si l'authentification est réussie
 include 'demarrage_session.php'; // Inclure le script de démarrage de session
+<?php
+// demarrage_session.php
+
+// Démarre la session PHP
+session_start();
+
+// Vous pouvez effectuer d'autres opérations de configuration de session ici, si nécessaire
+// Par exemple :
+// $_SESSION['user_id'] = $user_id; // Stocke l'ID de l'utilisateur dans la session
+// $_SESSION['username'] = $username; // Stocke le nom d'utilisateur dans la session
+?>
+
 ?>
 
 
@@ -37,6 +49,7 @@ include 'demarrage_session.php'; // Inclure le script de démarrage de session
 <?php
 // Inclure le fichier de vérification de l'authentification (ex : verification_authentification.php)
 include 'verification_authentification.php';
+
 
 // Démarrer une session
 session_start();
