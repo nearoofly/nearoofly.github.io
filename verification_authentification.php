@@ -28,15 +28,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
-
-
-
-
-
-
 <?php
 // Inclure le fichier de vérification de l'authentification (ex : verification_authentification.php)
-include 'verification_authentification.php';
+include 'connexion.php';
 
 // Démarrer une session
 session_start();
