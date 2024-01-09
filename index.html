@@ -141,8 +141,9 @@ nav a {
     font-size: 18px;
     display: block;
     white-space: nowrap; /* Empêche le contenu de passer à la ligne */
-    overflow: hidden; /* Cache tout contenu excédant la largeur du nav */
-    text-overflow: ellipsis; /* Affiche "..." pour le texte dépassant */
+    overflow: visible; /* Permet l'affichage du contenu complet au survol */
+    text-overflow: clip; /* Affiche tout le contenu sans "..." */
+    width: 100%; /* Assure que le lien occupe tout l'espace disponible */
 }
 
 
