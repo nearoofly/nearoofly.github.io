@@ -361,6 +361,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuIcon = document.querySelector('.menu-icon');
+        const nav = document.querySelector('nav');
+
+        menuIcon.addEventListener('click', function() {
+            nav.classList.toggle('show-menu'); // Ajoute ou supprime la classe 'show-menu' au clic
+            menuIcon.classList.toggle('change'); // Active l'animation des barres pour former une croix
+        });
+    });
+</script>
 
       
     <footer>
