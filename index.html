@@ -82,162 +82,53 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </style>
    
     
-    <script src="Stripe.js"></script>
-  
-    <style>
-        body {
-            background-color: black;
-            color: white; 
-        }
-        .montant {
-            color: red; 
-        }
-        .bouton-don {
-            background-color: green;
-            color: black; 
-            padding: 10px 20px; 
-            border: none; 
-            border-radius: 5px; 
-            cursor: pointer; 
-        }
-        .bouton-envoyez {
-            background-color: green;
-            color: black;
-        }
-
-
-
-
-   
-        h1 {
-            text-align: center;
-        }
-        a {
-            display: block;
-            text-align: center;
-            margin: 10px;
-        }
-        .facebook-icon {
-            background-color: #1877F2;
-            color: #fff;
-            padding: 10px;
-            border-radius: 50%;
-        }
-        .twitter-icon {
-            background-color: #1DA1F2;
-            color: #fff;
-            padding: 10px;
-            border-radius: 50%;
-        }
-        .instagram-icon {
-            background-color: #E4405F;
-            color: #fff;
-            padding: 10px;
-            border-radius: 50%;
-        }
-        footer {
-            text-align: center;
-        }
-  
-
-
-
-
-
-
-
-     
-        .introduction {
-            background: url('background.jpg') center/cover no-repeat;
-            height: 30vh;
-            overflow: hidden;
-            text-align: center;
-        }
-
-        .intro-content {
-            position: absolute;
-            top: 10%;
-            left: 50%;
-            transform: translate(-30%, -30%);
-            text-align: center;
-        }
-
-        .intro-content h1 {
-            font-size: 120px;
-            margin: 0;
-            color: orange;
-        }
-
-        .intro-content p {
-            font-size: 20px;
-            margin: 20px 0;
-            color: white;
-        }
-    
-
-
-
-
-  .logo-link {
-    position: fixed;
-    top: 10px;
-    left: 10px; 
-    z-index: 9999;
-}
-
-
-
-
-
-
-
-        body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 5px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
-
+    <script src="stripe.js"></script>
+ <style>
+  /* Ajout d'une classe pour le menu et les icônes */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: #fff;
 }
 
 .menu-icon {
     cursor: pointer;
+    display: none; /* On cache initialement les trois barres */
 }
 
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    width: 100px; /* Largeur du petit carré */
-    height: 10px; /* Hauteur du petit carré */
-    line-height: 2px; /* Centrer le texte verticalement */
-    text-align: center; /* Centrer le texte horizontalement */
-    cursor: pointer;
-    margin: 0 auto; /* Ajoutez cette propriété pour centrer le bloc 'logo' dans l'en-tête */
+/* Style pour les barres du menu */
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
 }
 
+/* Rotation des barres lors du clic pour former une croix */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
 
+.change .bar2 {
+    opacity: 0;
+}
 
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* Affichage du menu lorsqu'il est ouvert */
 nav {
     display: none;
     position: fixed;
     top: 44px;
     left: 0;
-    width: 250px; /* Largeur du petit carré */
-    height: 300px; /* Hauteur du petit carré */
+    width: 250px;
+    height: 300px;
     background-color: #333;
     flex-direction: column;
     align-items: center;
@@ -253,12 +144,15 @@ nav a {
     display: block;
 }
 
-main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 90px 20px 60px 20px;
+/* Ajout de styles pour l'icône du menu */
+.menu-icon {
+    cursor: pointer;
+    display: block;
+    color: white;
+    font-size: 28px;
+    margin: 0 15px;
 }
+
 
     </style>
   
