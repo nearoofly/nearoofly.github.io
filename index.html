@@ -12,10 +12,6 @@
 </script>
 
 
-
-
-
-
   <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -24,10 +20,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-WZTPGR7G');</script>
 <!-- End Google Tag Manager -->
 
-  
 
-
-  
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
  <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
            <link rel="stylesheet" href="styles.css"> 
@@ -287,7 +280,9 @@ nav a {
     </header>
   
 <a href="index.html" class="logo-link">
-    <img src="images/Logo/HDessa_logo.png" alt="Logo de Mon Site Web" width="30" height="30">
+    <img src="images/Logo/HDessa_logo.png" alt="Logo de Mon Site Web" width="30" height="30" .menu-icon {
+    margin-right: 10px; .logo-link {
+    margin-top: 10px;>
 </a>
    
     <div class="introduction">
@@ -472,19 +467,99 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const menuIcon = document.querySelector('.menu-icon');
-        const nav = document.querySelector('nav');
 
-        menuIcon.addEventListener('click', function() {
-            nav.classList.toggle('show-menu'); // Ajoute ou supprime la classe 'show-menu' au clic
-            menuIcon.classList.toggle('change'); // Active l'animation des barres pour former une croix
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuIcon = document.querySelector('.menu-icon');
+            const nav = document.querySelector('nav');
+            const currentArticlesSection = document.getElementById('current-articles');
+            const previousArticlesSection = document.getElementById('previous-articles');
+            const showPreviousBtn = document.getElementById('show-previous-btn');
+
+            menuIcon.addEventListener('click', function () {
+                nav.style.display = (nav.style.display === 'flex') ? 'none' : 'flex';
+            });
+
+            // Logique pour afficher les pages sous les 3 barres
+            const pages = document.querySelectorAll('nav a');
+            pages.forEach(page => {
+                page.addEventListener('click', function ()
+ {
+                    // Ajoutez la logique pour rediriger ou afficher la page correspondante
+                    // Par exemple, vous pouvez utiliser window.location.href pour la redirection
+                });
+            });
+
+            document.getElementById('article-form').addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                const title = document.getElementById('article-title').value;
+                const content = document.getElementById('article-content').value;
+
+                const article = {
+                    title: title,
+                    content: content,
+                    user: 'user' + Math.random().toString(36).substring(7),
+                    timestamp: new Date().getTime()
+                };
+
+                // Logique pour sauvegarder l'article dans localStorage
+                let previousArticles = JSON.parse(localStorage.getItem('previousArticles')) || [];
+                previousArticles.push(article);
+                localStorage.setItem('previousArticles', JSON.stringify(previousArticles));
+
+                // Logique pour afficher l'article actuel
+                const articleElement = createArticleElement(article);
+                currentArticlesSection.appendChild(articleElement);
+
+                // Effacez le contenu du formulaire après la publication
+                document.getElementById('article-title').value = '';
+                document.getElementById('article-content').value = '';
+            });
+
+            // Logique pour afficher les articles actuels depuis localStorage
+            let currentArticles = []; // Remplacez ceci par la vraie logique pour récupérer les articles actuels
+            currentArticles.forEach(article => {
+                const articleElement = createArticleElement(article);
+                currentArticlesSection.appendChild(articleElement);
+            });
+
+            // Logique pour afficher les anciennes publications
+            showPreviousBtn.addEventListener('click', function () {
+                // Ajoutez ici la logique pour afficher les anciennes publications
+                let previousArticles = JSON.parse(localStorage.getItem('previousArticles')) || [];
+                previousArticles.forEach(article => {
+                    const articleElement = createArticleElement(article);
+                    previousArticlesSection.appendChild(articleElement);
+                });
+
+                // Affichez la section des anciennes publications
+                previousArticlesSection.style.display = 'block';
+            });
+
+            // Fonction pour créer un élément d'article HTML
+            function createArticleElement(article) {
+                const articleDiv = document.createElement('div');
+                articleDiv.classList.add('blog-post');
+
+                const titleElement = document.createElement('h3');
+                titleElement.textContent = article.title;
+
+                const userElement = document.createElement('p');
+                userElement.textContent = 'Auteur: ' + article.user;
+
+                const contentElement = document.createElement('p');
+                contentElement.textContent = article.content;
+
+                articleDiv.appendChild(titleElement);
+                articleDiv.appendChild(userElement);
+                articleDiv.appendChild(contentElement);
+
+                return articleDiv;
+            }
         });
-    });
-</script>
-
-      
+    </script>
     <footer>
         <p>&copy; 2023 HDessa video create by Goofly</p>
     </footer>  
