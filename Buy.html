@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between; /* Conserve les trois barres dans le coin */
+            align-items: center;
+        }
+
+        .menu-icon {
+            cursor: pointer;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0 auto; /* Ajoutez cette ligne pour centrer horizontalement */
+            display: flex;
+            align-items: center; /* Ajoutez cette ligne pour centrer verticalement */
+        }
+
+        nav {
+            display: none;
+            position: fixed;
+            top: 60px;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            z-index: 999;
+        }
+
+        nav a {
+            padding: 15px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            display: block;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 90px 20px 60px 20px; /* Adjusted padding for the fixed header and footer */
+        }
+
+        .product {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 15px;
+            width: 280px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #333;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 5px;
+            position: fix;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+    <title>Ma Boutique en Ligne</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="menu-icon">&#9776;</div>
+            <div class="logo">Bloga Store</div>
+        </div>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="#">À Propos</a>
+            <a href="#">Service</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product">
+            <img src="images/D7260E17-7840-4CFB-9A16-E3C4D8A549D9.jpeg" alt="Article 1">
+            <h2>Article 1</h2>
+            <p>Prix : 10.00€</p>
+            <a href="https://www.vinted.fr/items/3952675556-cadres">Détails</a>
+        </section>
+
+        <section class="product">
+            <img src="images/photo1704785610.jpeg" alt="Article 2">
+            <h2>Article 2</h2>
+            <p>Prix : 13.13€</p>
+            <a href="https://www.vinted.fr/items/3952571484-vases">Détails</a>
+        </section>
+        <!-- Ajoutez d'autres sections pour plus d'articles -->
+    </main>
+
+    <footer>
+        &copy; 2024 Bloga Store. Tous droits réservés.
+    </footer>
+
+    <script>
+        const menuIcon = document.querySelector('.menu-icon');
+        const nav = document.querySelector('nav');
+
+        menuIcon.addEventListener('click', function() {
+            nav.style.display = (nav.style.display === 'flex') ? 'none' : 'flex';
+        });
+    </script>
+</body>
+</html>
