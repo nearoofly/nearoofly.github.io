@@ -38,19 +38,20 @@
             display: flex;
             align-items: center; /* Ajoutez cette ligne pour centrer verticalement */
         }
+nav {
+    display: none;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 60px; /* Ajustez la largeur selon vos préférences */
+    height: 60px; /* Ajustez la hauteur selon vos préférences */
+    background-color: #333;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    z-index: 999;
+}
 
-        nav {
-            display: none;
-            position: fixed;
-            top: 60px;
-            left: 0;
-            width: 100%;
-            background-color: #333;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            z-index: 999;
-        }
 
         nav a {
             padding: 15px;
@@ -58,7 +59,7 @@
             color: #fff;
             font-size: 18px;
             display: block;
-            width: 80%;
+            
         }
 
         main {
